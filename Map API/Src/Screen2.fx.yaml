@@ -1,0 +1,59 @@
+Screen2 As screen:
+    Fill: =Green
+
+    Button3 As button:
+        Height: =70
+        OnSelect: |-
+            =Launch("https://www.google.com/maps/place/" & Substitute(TextInput1.Text, " ", "+") & ",+" & TextInput2.Text & ",+" & TextInput3.Text)
+        Size: =24
+        Text: ="Button"
+        Width: =280
+        X: =180
+        Y: =568
+        ZIndex: =1
+
+    TextInput1 As text:
+        Default: ="11208 Lake Victoria Lane"
+        Height: =70
+        Size: =21
+        Width: =560
+        X: =52
+        Y: =116
+        ZIndex: =2
+
+    TextInput2 As text:
+        Default: ="Bowie"
+        Height: =70
+        Size: =21
+        Width: =560
+        X: =52
+        Y: =253
+        ZIndex: =3
+
+    TextInput3 As text:
+        Default: ="MD"
+        Height: =70
+        Size: =21
+        Width: =560
+        X: =52
+        Y: =395
+        ZIndex: =4
+
+    Label3 As label:
+        Height: =70
+        Size: =21
+        Text: =
+        Width: =560
+        X: =40
+        Y: =670
+        ZIndex: =5
+
+    Label4 As label:
+        Height: =70
+        Size: =21
+        Text: =
+        Width: =560
+        X: =40
+        Y: =794
+        ZIndex: =6
+
